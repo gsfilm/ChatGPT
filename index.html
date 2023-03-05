@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Chat-Plus</title>
+	<link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="logo" style="background-image: url(img/Logo.png)"></div>
+	<div>
+	<form id="gpt3-form" style="display:flex;">
+		<div class="input">
+			<input id="search-input" type="text" placeholder="尽管向我提问..." autocomplete="off">
+		</div>
+		<button id="btn" type="submit" class="search">
+		<svg t="1677725480478" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4072" width="32" height="32"><path d="M35.15807894 382.42251307l947.585056-144.68161067-767.92547414 254.38525013zM219.58738454 503.2555072l767.92547306-254.38525013-670.94109653 306.852208 11.12935467 233.716448z" fill="#ffffff" p-id="4073"></path><path d="M302.52343574 832.36642453l-12.71926293-233.71644906 166.94032 106.523824zM579.16739414 762.41048l-127.19262506-82.67520533-166.94032-106.523824 670.94109653-306.852208z" fill="#ffffff" p-id="4074"></path></svg>
+		</button>
+	</form>
+	</div>
+	<div id="msg" class="msg-top"></div>
+</div>
+<script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/Script.js"></script>
+<script type="text/javascript">
+    $(function (){
+        helangSearch.init();
+    })
+</script>
+</body>
+</html>
